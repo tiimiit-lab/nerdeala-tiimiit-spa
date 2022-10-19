@@ -1,0 +1,49 @@
+name: "CI/CD"
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "⚙ Set up Node.js"
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: "✅ Checkout repository"
+        uses: actions/checkout@v2
+
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      REPOSITORY: ${{ github.repository }}
+      WITH_V: true
+    steps:
+      - uses: actions/checkout@v2
+      - name: "💾 Restore packages from cache"
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: "📦 Install packages"
+        run: yarn install
+
+      - name: "🔨 Build"
+        run: yarn build
+
+      - name: "🚀 Deploy"
+        run: |
+          git config --global user.name "GitHub CI/CD bot"
+          git config --global user.email "${GITHUB_EMAIL}"
+          git remote set-url origin https://${GITHUB_TOKEN}@github.com/${REPOSITORY}
+          yarn deploy
