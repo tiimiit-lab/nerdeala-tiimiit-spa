@@ -2,7 +2,7 @@
   "name": "poc-frontend-taller-nerdearla",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tiimiit-lab.github.io/poc-frontend-taller-nerdearla/",
+  "homepage": "https://tiimiit-lab.github.io/nerdearla-tiimiit-spa/",
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",
     "@emotion/react": "^11.10.4",
@@ -10,7 +10,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "@tresdoce-test/core": "^0.1.0-beta.6",
+    "@tresdoce-test/core": "^0.1.0-beta.7",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
