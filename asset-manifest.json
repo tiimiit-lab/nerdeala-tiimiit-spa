@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/poc-frontend-taller-nerdearla/static/css/main.da13704e.css",
-    "main.js": "/poc-frontend-taller-nerdearla/static/js/main.e3b113d4.js",
-    "static/media/logo-nerdearla.svg": "/poc-frontend-taller-nerdearla/static/media/logo-nerdearla.e68faa44bf9fe476b23e89d7d7c2f41e.svg",
-    "static/media/logo-tiimiit.svg": "/poc-frontend-taller-nerdearla/static/media/logo-tiimiit.b59fed0e781f0c3a5b0b74807030e02c.svg",
-    "index.html": "/poc-frontend-taller-nerdearla/index.html",
-    "main.da13704e.css.map": "/poc-frontend-taller-nerdearla/static/css/main.da13704e.css.map",
-    "main.e3b113d4.js.map": "/poc-frontend-taller-nerdearla/static/js/main.e3b113d4.js.map"
+    "main.css": "/nerdearla-tiimiit-spa/static/css/main.da13704e.css",
+    "main.js": "/nerdearla-tiimiit-spa/static/js/main.990d19c3.js",
+    "static/media/logo-nerdearla.svg": "/nerdearla-tiimiit-spa/static/media/logo-nerdearla.e68faa44bf9fe476b23e89d7d7c2f41e.svg",
+    "static/media/logo-tiimiit.svg": "/nerdearla-tiimiit-spa/static/media/logo-tiimiit.b59fed0e781f0c3a5b0b74807030e02c.svg",
+    "index.html": "/nerdearla-tiimiit-spa/index.html",
+    "main.da13704e.css.map": "/nerdearla-tiimiit-spa/static/css/main.da13704e.css.map",
+    "main.990d19c3.js.map": "/nerdearla-tiimiit-spa/static/js/main.990d19c3.js.map"
   },
   "entrypoints": [
     "static/css/main.da13704e.css",
-    "static/js/main.e3b113d4.js"
+    "static/js/main.990d19c3.js"
   ]
 }
