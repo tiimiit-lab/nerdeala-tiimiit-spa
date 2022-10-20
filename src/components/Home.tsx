@@ -20,7 +20,7 @@ export const Home = () => {
       </Text>
       <HStack spacing={5}>
       <Button onClick={() => NavigateTo('https://github.com/tiimiit-lab') }>Ir a Github</Button>
-      <Button style={{backgroundColor: 'black'}}>Ir a Figma</Button>
+      <Button onClick={() => NavigateTo('https://www.figma.com/community/file/1164892729417359879') } style={{backgroundColor: 'black'}}>Ir a Figma</Button>
       </HStack>
     </Stack>
     </Container>
